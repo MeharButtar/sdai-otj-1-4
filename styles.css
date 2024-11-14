@@ -1,46 +1,233 @@
-#menu h2 {
-    text-align: center;
-    width: 800px;
-    margin: 0 auto;
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #000F00; 
+    background: linear-gradient(135deg, #000F00, #003300); 
+    color: #fff;
+    line-height: 1.8; 
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 15px;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #FF8A00; 
+    color: #fff;
+    border-radius: 5px;
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Arial', sans-serif;  /* Replace with your desired font family */
-    color: #333;  /* Example color */
-    margin-bottom: 20px;  /* Adjust margin as needed */
+    font-family: 'Poppins', sans-serif;  
+    color: #FF8A00;  
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
 h1 {
-    font-size: 36px;  /* Example font size */
+    font-size: 40px;  
+    text-align: center;
+    letter-spacing: 2px;  
 }
 
 h2 {
-    font-size: 28px;  /* Example font size */
+    font-size: 32px;
+    margin-top: 20px;
+    text-align: center;
 }
 
 h3 {
-    font-size: 22px;  /* Example font size */
+    font-size: 26px;
 }
 
-.menu-item-description {
-    font-size: 16px; /* Adjust as needed */
-    line-height: 1.5;
-    color: #666; /* Example color */
+h4 {
+    font-size: 20px;
 }
+
 
 p, li {
-    line-height: 1.6;  /* Adjust for readability */
+    font-family: 'Open Sans', sans-serif;  
+    font-size: 18px;
+    color: #ddd;  
+    line-height: 1.8;
+    margin-bottom: 20px;
 }
 
-h1, h2, h3, h4 {
+
+.menu-item-description {
+    font-size: 16px;
+    color: #bbb;  /
+}
+
+
+#about p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#locations {
+    text-align: center; 
+    margin-top: 40px; 
+    margin-bottom: 40px;
+}
+
+#locations h2 {
+    font-size: 40px; 
+    font-family: 'Open Sans', sans-serif;   
+    color: #FF8A00; 
+    margin-bottom: 10px;
+}
+
+#locations p {
+    font-size: 30px; 
+    color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;  
+}
+
+
+#favorites {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#favorites h2 {
+    font-size: 2.5rem;
+    color: #FF8A00;
+    margin-bottom: 20px;
+}
+
+#favorites p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.image-gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    width: auto;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+figcaption {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    color: #666;
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    margin-top: 5px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px; 
+    display: inline-block;
+    transition: transform 0.3s ease; 
+}
+
+.icon:hover {
+    transform: scale(1.1); 
+}
+
+
+footer p {
+    font-size: 1rem;
     margin-top: 20px;
-    margin-bottom: 15px; /* Adjust as needed */
+    color: #bbb;
 }
 
-p {
-    margin-bottom: 20px;  /* Adjust for spacing between paragraphs */
+button {
+    background-color: #FF8A00;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-ul {
-    margin-left: 20px;  /* Adds padding to lists */
+button:hover {
+    background-color: #e77c00;  
+    transform: scale(1.05); 
+}
+
+@media (max-width: 750px) {
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .image-gallery-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-item {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    footer .social-icons {
+        justify-content: center;
+        gap: 15px;
+    }
 }

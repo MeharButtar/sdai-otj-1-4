@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Dish - Food Truck & Restaurant</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Hero Section -->
@@ -29,23 +30,22 @@
         <p>Dev Dish is the brainchild of Alex and Jamie, two friends who met at a hackathon and discovered a shared love for innovative cuisine. With a background in software development and a knack for culinary creativity, they embarked on a journey to deliver delicious, tech-themed dishes to the community.</p>
     </section>
 
-    <!-- New Image -->
-    <section>
+    <div class="image-gallery-container" class="gallery-item">
+   
      <figure>
-        <img src="assets/images/3d-view-street-food-car-photo-hyperrealistic-8k-photo_1124848-142742.jpg" alt="Food truck" style="width: 300px; height: auto;">
-        <figcaption>Our food truck.</figcaption>
+        <img src="assets/images/3d-view-street-food-car-photo-hyperrealistic-8k-photo_1124848-142742.jpg" alt="Food truck" class="gallery-item">
+        <figcaption>Our food truck</figcaption>
      </figure>
-    </section>
-
-    <!-- Images Section -->
+    
     <figure>
-        <img src="assets/images/cesar-bretana-gonzalez-a3dhUC7EhYg-unsplash.jpg" alt="Food Truck" style="width: 300px; height: auto;">
-        <figcaption>Our food truck serving delicious meals.</figcaption>
+        <img src="assets/images/cesar-bretana-gonzalez-a3dhUC7EhYg-unsplash.jpg" alt="Food Truck" class="gallery-item">
+        <figcaption>Our food truck serving delicious meals</figcaption>
     </figure>
     <figure>
-        <img src="assets/images/pexels-edwardeyer-1247755.jpg" alt="Burger" style="width: 300px; height: auto;">
-        <figcaption>One of our signature burgers.</figcaption>
+        <img src="assets/images/pexels-edwardeyer-1247755.jpg" alt="Burger" class="gallery-item">
+        <figcaption>One of our signature burgers</figcaption>
     </figure>
+</div>
 
     <!-- Menu Section -->
     <section id="menu">
@@ -72,8 +72,13 @@
 
     <!-- Developer's Favorites Section -->
     <section id="favorites">
-        <h2>The Developer's Favorites</h2>
+        <h2> The Developer's Favorites</h2>
         <p>Enjoy Dev Dish fan favorite menu items at local events or book us for a visit to your neighborhood or for your special occasion.</p>
+        <div class="image-gallery-container" class="gallery-item">
+            <img src="assets/images/favorite1.jpg" alt="Favorite Dish 1" class="gallery-item">
+            <img src="assets/images/favorite2.jpg" alt="Favorite Dish 2" class="gallery-item">
+            <img src="assets/images/favorite3.jpg" alt="Favorite Dish 3" class="gallery-item">
+        </div>
     </section>
 
     <!-- Location and Hours Section -->
@@ -96,13 +101,15 @@
     </section>
 
     <!-- Footer -->
+       
     <footer>
         <h3>Follow Us</h3>
-        <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Instagram</a></li>
-        </ul>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><img src="assets/images/facebook-icon.png" alt="Facebook" class="icon"></a>
+            <a href="https://twitter.com" target="_blank"><img src="assets/images/twitter-icon.png" alt="Twitter" class="icon"></a>
+            <a href="https://instagram.com" target="_blank"><img src="assets/images/instagram-icon.png" alt="Instagram" class="icon"></a>
+        </div>
+        <p> Copyright (c) 2024 by Mehar Buttar</p>
     </footer>
 </body>
 </html>
