@@ -1,30 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<header>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Dish - Food Truck & Restaurant</title>
-</header>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-    
-
     <!-- Hero Section -->
-    <section id="hero">
+    <header id="hero">
         <h1>Dev Dish Food Truck & Restaurant</h1>
-    </section>
+        <!-- Navbar -->
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#hours">Hours</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#locations">Locations</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- Navbar -->
-<header>
-    <nav>
-        <ul>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#hours">Hours</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#locations">Locations</a></li>
-        </ul>
-    </nav>
-    
-</header>
     <!-- About Us Section -->
     <section id="about">
         <h2>About Us</h2>
@@ -33,23 +29,38 @@
         <p>Dev Dish is the brainchild of Alex and Jamie, two friends who met at a hackathon and discovered a shared love for innovative cuisine. With a background in software development and a knack for culinary creativity, they embarked on a journey to deliver delicious, tech-themed dishes to the community.</p>
     </section>
 
-    <img src="assets/images/cesar-bretana-gonzalez-a3dhUC7EhYg-unsplash.jpg" alt="Food Truck" style="width: 300px; height: auto;">
-    <img src="assets/images/pexels-edwardeyer-1247755.jpg" alt = "Burger" style = "width: 300px; height: auto;">
+    <!-- New Image -->
+    <section>
+     <figure>
+        <img src="assets/images/3d-view-street-food-car-photo-hyperrealistic-8k-photo_1124848-142742.jpg" alt="Food truck" style="width: 300px; height: auto;">
+        <figcaption>Our food truck.</figcaption>
+     </figure>
+    </section>
+
+    <!-- Images Section -->
+    <figure>
+        <img src="assets/images/cesar-bretana-gonzalez-a3dhUC7EhYg-unsplash.jpg" alt="Food Truck" style="width: 300px; height: auto;">
+        <figcaption>Our food truck serving delicious meals.</figcaption>
+    </figure>
+    <figure>
+        <img src="assets/images/pexels-edwardeyer-1247755.jpg" alt="Burger" style="width: 300px; height: auto;">
+        <figcaption>One of our signature burgers.</figcaption>
+    </figure>
 
     <!-- Menu Section -->
     <section id="menu">
+        
         <h2>The Dev Dish Quarterly Menu</h2>
         <h3>Wraps</h3>
         <ul>
-            <li><strong>Function Fries:</strong> Buffalo chicken, romaine lettuce, tomatoes, carrots, ranch, blue cheese</li>
-            <li><strong>Loop Wrap:</strong> Vegetarian. Hummus, romaine lettuce, sun-dried tomatoes, Kalamata olives, feta cheese, tzatziki sauce</li>
-            <li><strong>Stack Overflow:</strong> Jalapeno tortilla, turkey chili, onions, cheddar cheese, avocado</li>
-            <li><strong>Recursive Roll:</strong> Smoked salmon, cream cheese, cucumber, dill, and baby spinach</li>
-            <li><strong>Binary Bites:</strong> Marinated pork, pickled carrots, cucumber, cilantro, mint, fresno chiles, mayonnaise</li>
-            <li><strong>Git Wrap:</strong> Vegetarian. Falafel, red onion, romaine lettuce, tomato, and tzatziki sauce</li>
+            <li><strong>Function Fries:</strong> <span class="menu-item-description">Buffalo chicken, romaine lettuce, tomatoes, carrots, ranch, blue cheese</span></li>
+            <li><strong>Loop Wrap:</strong> <span class="menu-item-description">Vegetarian. Hummus, romaine lettuce, sun-dried tomatoes, Kalamata olives, feta cheese, tzatziki sauce</span></li>
+            <li><strong>Stack Overflow:</strong> <span class="menu-item-description">Jalapeno tortilla, turkey chili, onions, cheddar cheese, avocado</span></li>
+            <li><strong>Recursive Roll:</strong> <span class="menu-item-description">Smoked salmon, cream cheese, cucumber, dill, and baby spinach</span></li>
+            <li><strong>Binary Bites:</strong> <span class="menu-item-description">Marinated pork, pickled carrots, cucumber, cilantro, mint, fresno chiles, mayonnaise</span></li>
+            <li><strong>Git Wrap:</strong> <span class="menu-item-description">Vegetarian. Falafel, red onion, romaine lettuce, tomato, and tzatziki sauce</span></li>
         </ul>
         <p><em>Note:</em> All wraps, except Stack Overflow, are served on your choice of flour or corn tortilla.</p>
-
         <h3>Sides</h3>
         <ul>
             <li><strong>Bug-Free Fries:</strong> Just a side of fries</li>
@@ -70,16 +81,17 @@
         <h2>Location</h2>
         <p>511 Tristin Isle Park, Hudsonton, Michigan</p>
     </section>
+
     <section id="hours">
         <h3>Hours</h3>
         <ul>
-            <li>Monday: 10am-7pm</li>
-            <li>Tuesday: 10am-7pm</li>
-            <li>Wednesday: 10am-7pm</li>
-            <li>Thursday: 10am-10pm</li>
-            <li>Friday: 10am-9pm</li>
-            <li>Saturday: 12pm-11pm</li>
-            <li>Sunday: 12pm-11pm</li>
+            <li><span>Monday:</span> 10am-7pm</li>
+            <li><span>Tuesday:</span> 10am-7pm</li>
+            <li><span>Wednesday:</span> 10am-7pm</li>
+            <li><span>Thursday:</span> 10am-10pm</li>
+            <li><span>Friday:</span> 10am-9pm</li>
+            <li><span>Saturday:</span> 12pm-11pm</li>
+            <li><span>Sunday:</span> 12pm-11pm</li>
         </ul>
     </section>
 

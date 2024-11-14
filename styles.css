@@ -1,0 +1,46 @@
+#menu h2 {
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Arial', sans-serif;  /* Replace with your desired font family */
+    color: #333;  /* Example color */
+    margin-bottom: 20px;  /* Adjust margin as needed */
+}
+
+h1 {
+    font-size: 36px;  /* Example font size */
+}
+
+h2 {
+    font-size: 28px;  /* Example font size */
+}
+
+h3 {
+    font-size: 22px;  /* Example font size */
+}
+
+.menu-item-description {
+    font-size: 16px; /* Adjust as needed */
+    line-height: 1.5;
+    color: #666; /* Example color */
+}
+
+p, li {
+    line-height: 1.6;  /* Adjust for readability */
+}
+
+h1, h2, h3, h4 {
+    margin-top: 20px;
+    margin-bottom: 15px; /* Adjust as needed */
+}
+
+p {
+    margin-bottom: 20px;  /* Adjust for spacing between paragraphs */
+}
+
+ul {
+    margin-left: 20px;  /* Adds padding to lists */
+}
